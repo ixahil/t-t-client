@@ -262,24 +262,24 @@ const HomePage = () => {
 const DestinationTabs = ({ topDestinations, title }) => {
   return (
     <SectionLayout title={title}>
-      <Tabs defaultValue={topDestinations[0].title} className="w-full">
+      <Tabs defaultValue={topDestinations[0].region} className="w-full">
         <TabsList className="gap-16 border-b-2 pb-4 border-primary-slate-100 rounded-none w-full justify-start">
           {topDestinations.map((dest) => (
             <TabsTrigger
-              key={dest.title}
-              value={dest.title}
+              key={dest.region}
+              value={dest.region}
               className="text-xl font-medium pb-4 
                 data-[state=active]:border-b-4 border-primary rounded-none 
                 data-[state=active]:shadow-none data-[state=active]:bg-none"
             >
-              {dest.title}
+              {dest.region}
             </TabsTrigger>
           ))}
         </TabsList>
         {topDestinations.map((dest) => (
           <TabsContent
-            key={dest.title}
-            value={dest.title}
+            key={dest.region}
+            value={dest.region}
             className="pt-8"
             style={{ minHeight: "400px" }} // Set a minimum height
           >
