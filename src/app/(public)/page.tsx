@@ -13,207 +13,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
-
-const topDestinations = [
-  {
-    title: "North India",
-    destinations: [
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-    ],
-  },
-  {
-    title: "South India",
-    destinations: [
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-    ],
-  },
-  {
-    title: "East India",
-    destinations: [
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-    ],
-  },
-  {
-    title: "West India",
-    destinations: [
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-    ],
-  },
-  {
-    title: "Central India",
-    destinations: [
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-      {
-        title: "Uttarakhand",
-        packages: "50+ packages",
-        image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-      },
-    ],
-  },
-];
-
-const destinations = [
-  {
-    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-    title: "Beach Paradise",
-    package: "All-Inclusive",
-  },
-  {
-    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-    title: "Mountain Adventure",
-    package: "Weekend Getaway",
-  },
-  {
-    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-    title: "City Escape",
-    package: "Cultural Tour",
-  },
-  {
-    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-    title: "City Escape",
-    package: "Cultural Tour",
-  },
-  {
-    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-    title: "City Escape",
-    package: "Cultural Tour",
-  },
-  {
-    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-    title: "City Escape",
-    package: "Cultural Tour",
-  },
-  {
-    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-    title: "City Escape",
-    package: "Cultural Tour",
-  },
-  {
-    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-    title: "City Escape",
-    package: "Cultural Tour",
-  },
-  {
-    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
-    title: "City Escape",
-    package: "Cultural Tour",
-  },
-];
+import { data } from "@/config/data";
 
 const HomePage = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -261,11 +61,11 @@ const HomePage = () => {
         </div>
       </div>
       <DestinationTabs
-        topDestinations={topDestinations}
+        topDestinations={data.topDestinations}
         title={"Explore Top Destinations by Region"}
       />
       <SectionLayout title="Popular Destinations">
-        <HorizontalSlider items={destinations} />
+        <HorizontalSlider items={data.destinations} />
       </SectionLayout>
       <section>
         <div className="relative h-[75vh] w-full">
@@ -304,25 +104,25 @@ const HomePage = () => {
         title="Holidays by Interest"
         view={{ url: "/holidays", label: "View All" }}
       >
-        <HorizontalSlider items={destinations} />
+        <HorizontalSlider items={data.destinations} />
       </SectionLayout>
       <SectionLayout
         title="Top Weekend Destinations"
         view={{ url: "/holidays", label: "View All" }}
       >
-        <HorizontalSlider items={destinations} />
+        <HorizontalSlider items={data.destinations} />
       </SectionLayout>
       <SectionLayout
         title="International Holiday Packages"
         view={{ url: "/holidays", label: "View All" }}
       >
-        <GridContainer items={destinations} />
+        <GridContainer items={data.destinations} />
       </SectionLayout>
       <SectionLayout
         title="Top India Tourism Experiences"
         view={{ url: "/holidays", label: "View All" }}
       >
-        <HorizontalSlider items={destinations} />
+        <HorizontalSlider items={data.destinations} />
       </SectionLayout>
       <SectionLayout title="Guest Satisfaction is Our Goal">
         <Tabs defaultValue={"Do Dham Yatra"} className="w-full">

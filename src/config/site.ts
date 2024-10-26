@@ -173,6 +173,44 @@ export const siteConfig = {
       children: [],
     },
   ],
+  footerMenu: [
+    {
+      label: "Company",
+      children: [
+        { label: "About", href: "/about" },
+        { label: "Career", href: "/career" },
+        { label: "Reviews", href: "/reviews" },
+        { label: "Contact", href: "/contact" },
+        { label: "Blog", href: "/blog" },
+      ],
+    },
+    {
+      label: "Property Type",
+      children: [
+        { label: "Hostels in India", href: "/hostels-india" },
+        { label: "Beach Resorts", href: "/beach-resorts" },
+        { label: "Wildlife", href: "/wildlife" },
+        { label: "Heritage", href: "/heritage" },
+        { label: "Luxury", href: "/luxury" },
+      ],
+    },
+    {
+      label: "Legal Policy",
+      children: [
+        { label: "Terms & Conditions", href: "/terms" },
+        { label: "Disclaimer", href: "/disclaimer" },
+        { label: "Privacy Policy", href: "/privacy" },
+        { label: "Share Your Travel Experience", href: "/share" },
+      ],
+    },
+    {
+      label: "Other Services",
+      children: [
+        { label: "Destination Weddings", href: "/weddings" },
+        { label: "MICE", href: "/mice" },
+        { label: "Medical Tourism", href: "/medical" },
+      ],
+    },
+  ],
 };
-
 export type SiteConfig = typeof siteConfig;
