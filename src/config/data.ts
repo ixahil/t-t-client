@@ -4,22 +4,22 @@ export const data = {
       region: "North India",
       destinations: [
         {
-          name: "Uttarakhand",
+          title: "Uttarakhand",
           packages: "50+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Himachal",
+          title: "Himachal",
           packages: "60+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Jammu & Kashmir",
+          title: "Jammu & Kashmir",
           packages: "30+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Ladakh",
+          title: "Ladakh",
           packages: "25+ Packages",
           image: "/goa-package.webp",
         },
@@ -30,37 +30,37 @@ export const data = {
       region: "South India",
       destinations: [
         {
-          name: "Karnataka",
+          title: "Karnataka",
           packages: "25+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Tamil Nadu",
+          title: "Tamil Nadu",
           packages: "20+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Andaman",
+          title: "Andaman",
           packages: "15+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Kerala",
+          title: "Kerala",
           packages: "40+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Puducherry",
+          title: "Puducherry",
           packages: "10+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Andhra Pradesh",
+          title: "Andhra Pradesh",
           packages: "15+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Telangana",
+          title: "Telangana",
           packages: "10+ Packages",
           image: "/goa-package.webp",
         },
@@ -70,27 +70,27 @@ export const data = {
       region: "East India",
       destinations: [
         {
-          name: "Sikkim",
+          title: "Sikkim",
           packages: "40+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Arunachal",
+          title: "Arunachal",
           packages: "15+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Assam",
+          title: "Assam",
           packages: "25+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Meghalaya",
+          title: "Meghalaya",
           packages: "10+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Nagaland",
+          title: "Nagaland",
           packages: "15+ Packages",
           image: "/goa-package.webp",
         },
@@ -100,27 +100,27 @@ export const data = {
       region: "West India",
       destinations: [
         {
-          name: "Goa",
+          title: "Goa",
           packages: "15+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Gujarat",
+          title: "Gujarat",
           packages: "30+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Maharashtra",
+          title: "Maharashtra",
           packages: "20+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Daman & Diu",
+          title: "Daman & Diu",
           packages: "5+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Gir National Park",
+          title: "Gir National Park",
           packages: "10+ Packages",
           image: "/goa-package.webp",
         },
@@ -130,19 +130,207 @@ export const data = {
       region: "Central India",
       destinations: [
         {
-          name: "Rajasthan",
+          title: "Rajasthan",
           packages: "30+ Packages",
           image: "/goa-package.webp",
         },
         {
-          name: "Pune",
+          title: "Pune",
           packages: "10+ Packages",
           image: "/goa-package.webp",
         },
       ],
     },
   ],
-  destinations: [
+  popularDestinations: [
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "Beach Paradise",
+      package: "All-Inclusive",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "Mountain Adventure",
+      package: "Weekend Getaway",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+  ],
+  topIndiaDestinations: [
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "Beach Paradise",
+      package: "All-Inclusive",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "Mountain Adventure",
+      package: "Weekend Getaway",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+  ],
+  internationalHolidayPackages: [
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "Beach Paradise",
+      package: "All-Inclusive",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "Mountain Adventure",
+      package: "Weekend Getaway",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+  ],
+  topWeekendDestinations: [
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "Beach Paradise",
+      package: "All-Inclusive",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "Mountain Adventure",
+      package: "Weekend Getaway",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+    {
+      image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+      title: "City Escape",
+      package: "Cultural Tour",
+    },
+  ],
+  holidaysByInterest: [
     {
       image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
       title: "Beach Paradise",
@@ -191,4 +379,62 @@ export const data = {
   ],
 };
 
+export const searchList = [
+  {
+    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+    title: "Beach Paradise",
+    package: "All-Inclusive",
+    destination: "darjeeling",
+  },
+  {
+    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+    title: "Mountain Adventure",
+    package: "Weekend Getaway",
+    destination: "darjeeling",
+  },
+  {
+    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+    title: "City Escape",
+    package: "Cultural Tour",
+    destination: "darjeeling",
+  },
+  {
+    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+    title: "City Escape",
+    package: "Cultural Tour",
+    destination: "darjeeling",
+  },
+  {
+    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+    title: "City Escape",
+    package: "Cultural Tour",
+    destination: "darjeeling",
+  },
+  {
+    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+    title: "City Escape",
+    package: "Cultural Tour",
+    destination: "darjeeling",
+  },
+  {
+    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+    title: "City Escape",
+    package: "Cultural Tour",
+    destination: "darjeeling",
+  },
+  {
+    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+    title: "City Escape",
+    package: "Cultural Tour",
+    destination: "darjeeling",
+  },
+  {
+    image: "/Darjeeling-Himalayan-Railway-Toy-Train.jpg",
+    title: "City Escape",
+    package: "Cultural Tour",
+    destination: "darjeeling",
+  },
+];
+
 export type DataType = typeof data;
+export type SearchListType = typeof searchList;

@@ -1,9 +1,7 @@
-"use client";
 import SectionLayout from "@/components/layouts/section-layout";
+import SearchComponent from "@/components/shared/search";
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Image from "next/image";
-import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -12,21 +10,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { data } from "@/config/data";
+import Image from "next/image";
 
 const HomePage = () => {
-  const [searchQuery, setSearchQuery] = useState("");
-
-  const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
-  };
-
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    // Implement search functionality here
-    console.log("Searching for:", searchQuery);
-  };
   return (
     <>
       <div className="relative w-full min-h-screen bg-gray-100">
@@ -39,33 +27,14 @@ const HomePage = () => {
           />
           <div className="absolute inset-0 bg-black bg-opacity-50" />
         </div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <form
-            onSubmit={handleSearchSubmit}
-            className="relative w-full max-w-5xl"
-          >
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={handleSearchChange}
-              placeholder="Search..."
-              className="w-full p-4 text-lg text-black rounded-md shadow-md"
-            />
-            <button
-              type="submit"
-              className="absolute right-2 top-2 px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-500 transition"
-            >
-              Search
-            </button>
-          </form>
-        </div>
+        <SearchComponent className="absolute inset-0" />
       </div>
       <DestinationTabs
         topDestinations={data.topDestinations}
         title={"Explore Top Destinations by Region"}
       />
       <SectionLayout title="Popular Destinations">
-        <HorizontalSlider items={data.destinations} />
+        <HorizontalSlider items={data.popularDestinations} />
       </SectionLayout>
       <section>
         <div className="relative h-[75vh] w-full">
@@ -104,25 +73,25 @@ const HomePage = () => {
         title="Holidays by Interest"
         view={{ url: "/holidays", label: "View All" }}
       >
-        <HorizontalSlider items={data.destinations} />
+        <HorizontalSlider items={data.holidaysByInterest} />
       </SectionLayout>
       <SectionLayout
         title="Top Weekend Destinations"
         view={{ url: "/holidays", label: "View All" }}
       >
-        <HorizontalSlider items={data.destinations} />
+        <HorizontalSlider items={data.topWeekendDestinations} />
       </SectionLayout>
       <SectionLayout
         title="International Holiday Packages"
         view={{ url: "/holidays", label: "View All" }}
       >
-        <GridContainer items={data.destinations} />
+        <GridContainer items={data.internationalHolidayPackages} />
       </SectionLayout>
       <SectionLayout
         title="Top India Tourism Experiences"
         view={{ url: "/holidays", label: "View All" }}
       >
-        <HorizontalSlider items={data.destinations} />
+        <HorizontalSlider items={data.topIndiaDestinations} />
       </SectionLayout>
       <SectionLayout title="Guest Satisfaction is Our Goal">
         <Tabs defaultValue={"Do Dham Yatra"} className="w-full">

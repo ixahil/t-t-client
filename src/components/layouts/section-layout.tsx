@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -9,11 +10,12 @@ type Props = {
     url: string;
     label: string;
   };
+  className?: string;
 };
 
-const SectionLayout = ({ title, children, view }: Props) => {
+const SectionLayout = ({ title, children, view, className }: Props) => {
   return (
-    <section className="py-16 max-w-6xl mx-auto space-y-8">
+    <section className={cn("py-16 max-w-6xl mx-auto space-y-8", className)}>
       <div className="space-y-4">
         {title && <h2 className="text-5xl font-bold">{title}</h2>}
         {view && (
@@ -25,7 +27,7 @@ const SectionLayout = ({ title, children, view }: Props) => {
           </Link>
         )}
       </div>
-      <div>{children}</div>
+      <div className="h-full w-full">{children}</div>
     </section>
   );
 };
